@@ -24,7 +24,7 @@ const Details = ({
       setIsLoading(true);
       setPrices([]);
       const response = await axios.post(
-        "http://localhost:3001/upload",
+        "https://subscription-pricing-calculator-api.onrender.com/upload",
         formData,
         {
           headers: {
@@ -57,7 +57,7 @@ const Details = ({
     };
     try {
       const response = await axios.post(
-        "http://localhost:3001/calculate",
+        "https://subscription-pricing-calculator-api.onrender.com/calculate",
         payload
       );
       setPrices(response.data);
