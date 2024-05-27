@@ -39,8 +39,8 @@ function App() {
             setIsLoading={setIsLoading}
             isUpload={isUpload}
             setIsUpload={setIsUpload}
-            currentPage={currentPage}
-            inputPage={inputPage}
+            setCurrentPage={setCurrentPage}
+            setInputPage={setInputPage}
             entriesPerPage={entriesPerPage}
             setIsCalculated={setIsCalculated}
           />
