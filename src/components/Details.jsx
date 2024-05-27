@@ -8,6 +8,8 @@ const Details = ({
   isUpload,
   setIsUpload,
   setIsCalculated,
+  setCurrentPage,
+  setInputPage,
 }) => {
   const [file, setFile] = useState(null);
   const [data, setData] = useState({});
@@ -22,6 +24,8 @@ const Details = ({
     try {
       setIsCalculated(false);
       setIsLoading(true);
+      setCurrentPage(1);
+      setInputPage("1");
       setPrices([]);
       const response = await axios.post(
         "https://subscription-pricing-calculator-api.onrender.com/upload",
